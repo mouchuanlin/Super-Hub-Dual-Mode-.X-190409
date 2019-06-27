@@ -90,8 +90,7 @@ void Uart_initial_115200(void)
     TX1STA = 0x26;       //00100110
     RC1STA = 0x90;       //10010000
     BAUDCON1 = 0xc8;     //11001000
-    //SPBRG1 = 16;      // 115200   bps
-    SPBRG1 = 103;        // 19200    bps
+    SPBRG1 = 16;
     SPBRGH1 = 0;
 }
 

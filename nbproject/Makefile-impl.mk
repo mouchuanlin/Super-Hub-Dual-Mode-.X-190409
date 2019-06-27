@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Super Hub(Dual Mode).X-190409
+PROJECTNAME=Super-Hub-Dual-Mode-.X-190409
 
 # Active Configuration
 DEFAULTCONF=default

@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/Super_Hub_Dual_Mode_.X-190409.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=Super_Hub_Dual_Mode_.X-190409.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=superhub(dualmode).x-190409/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/Super-Hub-Dual-Mode-.X-190409.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=Super-Hub-Dual-Mode-.X-190409.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=super-hub-dual-mode-.x-190409/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/superhub(dualmode).x-190409/bin
+makeDirectory ${TMPDIR}/super-hub-dual-mode-.x-190409/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/superhub(dualmode).x-190409.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/super-hub-dual-mode-.x-190409.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/superhub(dualmode).x-190409.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/super-hub-dual-mode-.x-190409.tar *
 checkReturnCode
 
 # Cleanup

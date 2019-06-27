@@ -264,8 +264,7 @@ module_start:
     rsp = 15;
     do{         
         Uart_initial_115200();
-        //soutdata("AT+IPR=115200\r\n$");
-        soutdata("AT+IPR=19200\r\n$");
+        soutdata("AT+IPR=115200\r\n$");
         wait_ok_respond(40);
         //Uart_initial();
         cnt = check_module_run();
